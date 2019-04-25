@@ -26,11 +26,11 @@ class CircleTest(unittest.TestCase):
 
     def testZeroRadius(self):
         for x, y, z in self.knownValues:
-            self.assertRaises(InvalidInputError, self.c.setRadius(x), 0)
+            self.assertRaises(InvalidInputError, self.c.setRadius, 0)
     
     def testNegativeRadius(self):
         for x, y, z in self.knownValues:
-            self.assertRaises(InvalidInputError, self.c.setRadius(x), -1)
+            self.assertRaises(InvalidInputError, self.c.setRadius, -1)
 
     def testNewXY(self):
         for a, b, c, d in self.knownXY:

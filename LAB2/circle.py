@@ -12,7 +12,7 @@ class Circle:
     
     def setRadius(self, val):
         if val <= 0:
-            raise InvalidInputError
+            raise InvalidInputError()
         else:
             self.radius = float(val)
 
